@@ -1,7 +1,9 @@
 {
+  "homepage":"https://Bhavesh-0909.github.io/sample-frontend-deployement",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://localhost:4000/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -17,6 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.3.1"
   }
 }
